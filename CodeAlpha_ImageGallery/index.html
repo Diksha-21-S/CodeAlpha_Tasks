@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 class="title">Image Gallery</h1>
+
+  <div class="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1025/600/400" alt="" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1035/600/400" alt="" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1045/600/400" alt="" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1055/600/400" alt="" onclick="openLightbox(this)">
+    <img src="https://picsum.photos/id/1065/600/400" alt="" onclick="openLightbox(this)">
+  </div>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="preview" class="lightbox-content">
+    <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+    <button class="next" onclick="changeImage(1)">&#10095;</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
